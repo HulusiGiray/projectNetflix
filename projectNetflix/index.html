@@ -15,16 +15,70 @@
 </head>
 
 <body>
-    
-    <div class="container-fluid" style="background-image: url(../projectNetflix/assets/background_image.jpg); width: 100%; height: 100%; display:flex; align-items: center; position: absolute;">
 
-        <div class="container" style="background-color:rgba(0, 0, 0, 0.4); position: relative; width: 1000px; height: 750px; display:flex;align-items:center">
-            <div class="container" style="background-color: black;position:relative;width:80%;height:600px" >
-            
+    <div class="container-fluid"
+        style="background-image:url(../projectNetflix/assets/background_image.jpg); width:100%; height: 1125px;; display:flex; align-items:center; position:relative; background-repeat: no-repeat;">
+
+        <div class="container"
+            style="background-color:rgba(0, 0, 0, 0.6); position:relative; width:1000px; height: 90%; display:flex; align-items:center">
+
+            <a style="color: white; position: absolute; top:2px; left:400px; font-size:35px;">NET
+                <a style="color: red; position: absolute; top:2px; left:466px; font-size:35px;">FLIX</a>
+            </a>
+
+            <div class="container d-flex align-items-right"
+                style="background-color:rgb(12, 10, 10);position: absolute; width:70%; height:90%; display:flex; align-items:center; left: 124px;">
+
+                <a style="color: white; position:absolute; top:30px; left: 110px;">Thank you for signing up at
+                    Netflix.Tell us more about your self.</a>
+
+                <form>
+                    <label for="name" style="color: white;">Name: </label><br>
+                    <input type="text" id="name" name="name" placeholder="Enter your name"><br>
+
+                    <label for="age" style="color: white;">Age: </label><br>
+                    <input type="text" id="age" name="age" placeholder="Enter your age"><br>
+
+                    <label for="mail" style="color: white;">Mail: </label><br>
+                    <input type="text" id="mail" name="mail" placeholder="Enter your mail"><br>
+
+                    <label for="type" style="color: white;">Content type</label><br>
+                    
+                    <select name="type" id="type" size="1" class="forminput">
+                        <option value="series">Series</option>
+                        <option value="movies">Movies</option>
+                        <option value="cartoon">Cartoon</option>
+                        <option value="other">Other</option>
+                    </select><br><br>
+
+                    <label style="color: white;">Movie type;</label><br>
+                    
+                    <input type="checkbox" value="action" name="action" id="Action">
+                    <label style="color: white;" for="Action">Action</label><br>
+                    
+                    <input type="checkbox" name="romance" id="romance" value="romance">
+                    <label for="romance" style="color: white;">Romance</label><br>
+                    
+                    <input type="checkbox" name="comedy" value="comedy">
+                    <label for="comedy" style="color: white;">Comedy</label><br>
+
+
+                    <label style="color: white;">Gender;</label><br>
+                    
+                    <input type="radio" value="male" id="male">
+                    <label for="male" style="color: white;">Male</label><br>
+                    
+                    <input type="radio" value="female" id="female">
+                    <label for="female" style="color: white;">Female</label><br><br>
+                    
+                    <label for="feedback" style="color: white;">Feedback</label><br>
+                    <textarea placeholder="any comment" id="feedback" class="formtexta"></textarea><br>
+                    <button class="send" type="button" onclick="alert('Teşekkürler &#128522;')">Send</button>
+                </form>
+
             </div>
+
         </div>
-    
-    </div>
 
 </body>
 
